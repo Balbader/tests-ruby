@@ -6,17 +6,8 @@ def shout(str)
   return str.upcase
 end
 
-def repeat(str, *p)
-  if str && p == nil
-    print "#{str} "
-    print str
-  elsif str && p
-    i = 0
-    while i < p.length
-      print "#{str} "
-      i += 1
-    end
-  end
+def repeat(str, count=2)
+  return Array.new(count, str).join(" ")
 end
 
 def start_of_word(str, nb)
@@ -34,10 +25,9 @@ def first_word(str)
 end
 
 def titleize(str)
-  puts str
   str = str.capitalize
   str = str.split(" ")
-  i = 1
+  i = 0
   while i < str.length
     if str[i].length <= 3
       str[i] = str[i]
@@ -49,3 +39,8 @@ def titleize(str)
   end
   puts str.join(" ")
 end
+
+titleize("jaws")
+titleize("david copperfield")
+titleize("war and peace")
+titleize("the bridge over the river kwai")
