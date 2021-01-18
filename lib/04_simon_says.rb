@@ -33,16 +33,9 @@ def titleize(str)
   puts
   i = 1
   while i <= str.length
+    str = str[i].capitalize
     print str[i]
-    puts
+    print " "
     i += 1
   end
 end
-
-
-titleize("the bridge over the river kwai")
-
-
-
-
-
