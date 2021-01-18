@@ -37,10 +37,5 @@ def titleize(str)
       i += 1
     end
   end
-  puts str.join(" ")
+  return str.join(" ")
 end
-
-titleize("jaws")
-titleize("david copperfield")
-titleize("war and peace")
-titleize("the bridge over the river kwai")
