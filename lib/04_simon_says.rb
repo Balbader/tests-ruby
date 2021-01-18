@@ -31,11 +31,7 @@ def titleize(str)
   str = str.split(" ")
   print str
   puts
-  i = 1
-  while i <= str.length
-    str = str[i].capitalize
-    print str[i]
-    print " "
-    i += 1
-  end
+  print (str[i].join(" ")).capitalize
 end
+
+titleize("the bridge over the river kwai")

@@ -36,8 +36,6 @@ def array_42(arr)
   return arr.include? "42".to_i
 end
 
-=begin
-puts reverse_upcase_noLTA("Tries this at Home, Kids")
-puts reverse_upcase_noLTA("Ponies loves carrots")
-puts reverse_upcase_noLTA("qwertyuiopasdfghjkl;zxcvbn")
-=end
+def magic_array(arr)
+  return arr.flatten.sort.collect{ |i| i * 2}.reject{ |x| x % 3 == 0}.uniq 
+end
