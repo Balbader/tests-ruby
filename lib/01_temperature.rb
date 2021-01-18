@@ -3,5 +3,5 @@ def ftoc(nb)
 end
 
 def ctof (nb)
-  return  (nb.to_i * 9.0 / 5) + 32
+  return  (nb * 9.0 / 5) + 32
 end
